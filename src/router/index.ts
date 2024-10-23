@@ -1,20 +1,19 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import { routes } from './routes'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: HomeView
-    },
-    {
-      path: '/login',
-      name: 'login',
-      component: () => import('../views/LoginView.vue')
-    }
-  ]
+  routes: routes,
+  scrollBehavior: () => ({ left: 0, top: 0 })
+})
+
+// 路由白名单
+const whiteList = new Set(['/login'])
+
+router.beforeEach((to, from, next) => {
+  if (whiteList.has(to.path)) return next()
+
+  next()
 })
 
 export default router
