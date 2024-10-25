@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "@unocss/preset-rem-to-px": "^0.63.6",
+    "ant-design-vue": "^4.2.5",
     "axios": "^1.7.7",
     "pinia": "^2.1.7",
     "sass": "^1.80.3",
@@ -37,7 +38,6 @@
     "cz-git": "^1.10.1",
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.23.0",
-    "naive-ui": "^2.40.1",
     "npm-run-all2": "^6.1.2",
     "prettier": "^3.2.5",
     "typescript": "~5.4.0",

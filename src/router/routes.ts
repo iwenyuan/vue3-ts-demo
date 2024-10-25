@@ -8,5 +8,9 @@ export const routes: RouteRecordRaw[] = [
     meta: {
       title: '登录'
     }
+  },
+  {
+    path: '/',
+    redirect: '/login'
   }
 ]

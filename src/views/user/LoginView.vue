@@ -1,7 +1,10 @@
-<template>
-  <div>登录</div>
-</template>
-
 <script setup lang="ts"></script>
 
-<style lang="scss" scoped></style>
+<template>
+  <div h-full f-c-c class="login-view">登录</div>
+</template>
+
+<style lang="scss" scoped>
+.login-view {
+}
+</style>
