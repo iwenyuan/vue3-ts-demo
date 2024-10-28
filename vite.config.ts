@@ -22,6 +22,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
+  css: {
+    // 设置scss的api类型为modern-compiler
+    preprocessorOptions: {
+      scss: {
+        api: 'modern-compiler'
+      }
+    }
+  },
   server: {
     host: '0.0.0.0',
     proxy: {

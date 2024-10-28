@@ -11,6 +11,7 @@ export const routes: RouteRecordRaw[] = [
   },
   {
     path: '/',
-    redirect: '/login'
+    // redirect: '/home',
+    component: () => import('@/views/workbenches/index.vue')
   }
 ]
